@@ -1,9 +1,11 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_application_1/model.dart';
 
 class Url {
   static String urlapi = "https://pokeapi.co/api/v2/";
   // ignore: unnecessary_brace_in_string_interps
   static String extender = "${urlapi}/pokemon";
+  Future<List<Model>> model;
 }
 
 class Pokepull {
