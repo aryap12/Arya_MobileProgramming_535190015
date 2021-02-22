@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
               ? Text("Pokeapp")
               : TextField(
                   onSubmitted: (value) {
-                    setState(() {
+                    setState(() async {
                       key = value;
                       Navigator.push(
                           context,
