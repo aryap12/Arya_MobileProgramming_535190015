@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
       pokelist = new List<Model>();
     }
     if (num < 152) {
-      for (var n = 0; n < 5; n++) {
+      for (var n = 0; n < 151; n++) {
         num++;
         print('pulling data from pokemon index number ${num.toString()}');
 
@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
               ? Text("Pokeapp")
               : TextField(
                   onSubmitted: (value) {
-                    setState(() async {
+                    setState(() {
                       key = value;
                       Navigator.push(
                           context,

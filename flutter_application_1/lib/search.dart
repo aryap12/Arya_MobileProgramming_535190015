@@ -29,8 +29,7 @@ class _State extends State<Search> {
   }
 
   @override
-  // ignore: override_on_non_overriding_member
-  void initstate() {
+  void initState() {
     super.initState();
     getSrc();
   }
@@ -38,8 +37,10 @@ class _State extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.red,
         appBar: AppBar(
-          title: Text("hasil"),
+          backgroundColor: Colors.cyan,
+          title: Text("Search result :"),
         ),
         body: Container(
             child: srcList.length > 0
